@@ -11,7 +11,7 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={colorScheme ? styles.whiteText : styles.blackText}>Open up App.js to start working on your app!</Text>
       <Button />
       <StatusBar style="auto" />
     </View>
