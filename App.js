@@ -1,19 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, useColorScheme, View } from 'react-native';
-import Button from './components/Button';
+import { StyleSheet, View } from 'react-native';
+import FlatCard from './components/project1/FlatCard';
 
 export default function App() {
-  const colorScheme = useColorScheme() === 'dark'
   return (
     <View style={styles.container}>
-      <Text style={colorScheme ? styles.whiteText : styles.blackText}>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text style={colorScheme ? styles.whiteText : styles.blackText}>Open up App.js to start working on your app!</Text>
-      <Button />
-      <StatusBar style="auto" />
+      <FlatCard />
     </View>
   );
 }
@@ -25,10 +16,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  whiteText: {
-    color: 'white'
-  },
-  blackText: {
-    color: 'black'
-  }
 });
